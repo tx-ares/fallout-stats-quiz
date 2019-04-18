@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { MessageService } from '../services/message.service';
+import { IMessageSender } from '../interfaces/message-sender';
 
 @Component({
   selector: 'app-vault-boy',
@@ -7,8 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VaultBoyComponent implements OnInit {
 
-  constructor() { }
+  public imageSrc = '../../assets/images/vaultboy1.png';
 
-  public ngOnInit(): void { }
+  constructor(private messageService: MessageService) { }
+
+  public speak(): void {
+    this.messageService.createMessage({who: 'vault-boy', importance: 'casual', message: 'Hi there, I\'m Vault Boy!', duration: 100000} as IMessageSender);
+  }
+
+  public ngOnInit(): void {
+    this.speak(); // Only for testing, this will throw a non breaking error about a snack bar message being generated in a life cycle hook.
+  }
 
 }
