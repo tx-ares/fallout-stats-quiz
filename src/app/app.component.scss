@@ -1,3 +1,13 @@
-body {
-  background-color: #000000;
+::ng-deep .cdk-global-overlay-wrapper {
+
+  .cdk-overlay-pane .mat-snack-bar-container {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    width: auto;
+  
+    .mat-simple-snackbar-action {
+      margin: 0;
+    }
+  }
 }
