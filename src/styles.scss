@@ -5,9 +5,14 @@ body {
 
 @font-face {
   font-family: overseer;
-  src: url(assets/fonts/Overseer.otf) format("opentype");
+  src: url(assets/fonts/overseer.otf) format("opentype");
+}
+
+@font-face {
+  font-family: overseer-italic;
+  src: url(assets/fonts/overseer-italic.otf) format("opentype");
 }
 
 * {
-  font-family: 'overseer', 'roboto', 'sans-serif';
+  font-family: 'overseer-italic', 'roboto', 'sans-serif';
 }
