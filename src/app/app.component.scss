@@ -1,13 +1,16 @@
+@import '../styles.scss';
+
 ::ng-deep .cdk-global-overlay-wrapper {
 
   .cdk-overlay-pane .mat-snack-bar-container {
     position: fixed;
-    bottom: 2rem;
-    left: 2rem;
+    bottom: 5rem;
+    right: 35%;
     width: auto;
 
     .mat-simple-snackbar {
-      background-color: gainsboro;
+      background: none;
+      color: $matrix-green;
       border-radius: 3px;
       padding: 0 0.5rem;
       span {
@@ -19,6 +22,8 @@
       margin: 0;
       button {
         padding: 0 .5rem;
+        background: none;
+        color: $matrix-green;
       }
     }
   }
