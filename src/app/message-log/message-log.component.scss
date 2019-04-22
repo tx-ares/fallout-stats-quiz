@@ -3,8 +3,8 @@
 .message-log-container {
   text-align: right;
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 2rem;
+  right: 2rem;
   button.message-log-visibility-button {
     @extend %button.hud-button;
   }
@@ -15,7 +15,7 @@
     visibility: hidden;
     transition: 1s ease all;
     overflow: hidden;
-    margin-bottom: 1.6rem;
+    margin-bottom: 2rem;
     &.open {
       height: 75px;
       visibility: visible;
