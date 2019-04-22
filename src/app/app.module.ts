@@ -7,11 +7,13 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { MessageService } from './services/message.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MessageLogComponent } from './message-log/message-log.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    VaultBoyComponent
+    VaultBoyComponent,
+    MessageLogComponent
   ],
   imports: [
     BrowserModule,
