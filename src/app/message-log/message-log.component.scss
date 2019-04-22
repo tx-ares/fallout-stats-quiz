@@ -1,0 +1,26 @@
+.message-log-container {
+  text-align: right;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  button.message-log-visibility-button {
+    background: red;
+    border: 2px solid gainsboro;
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+  }
+  .message-log {
+    color: #fff;
+    height: 0;
+    visibility: hidden;
+    transition: 1s ease all;
+    border: 1px solid grey;
+    overflow: hidden;
+    &.open {
+      height: 75px;
+      visibility: visible;
+    }
+  }
+}
+
