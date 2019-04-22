@@ -1,17 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'variables.scss';
+
 body {
-  background-color: #000000;
+  background-color: $black-as-my-soul;
   overflow: hidden;
 }
 
 @font-face {
   font-family: overseer;
-  src: url(assets/fonts/overseer.otf) format("opentype");
+  src: url(/assets/fonts/overseer.otf) format("opentype");
 }
 
 @font-face {
   font-family: overseer-italic;
-  src: url(assets/fonts/overseer-italic.otf) format("opentype");
+  src: url(/assets/fonts/overseer-italic.otf) format("opentype");
 }
 
 * {
