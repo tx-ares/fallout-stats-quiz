@@ -5,9 +5,21 @@
     bottom: 2rem;
     left: 2rem;
     width: auto;
+
+    .mat-simple-snackbar {
+      background-color: gainsboro;
+      border-radius: 3px;
+      padding: 0 0.5rem;
+      span {
+        margin-right: .5rem;
+      }
+    }
   
     .mat-simple-snackbar-action {
       margin: 0;
+      button {
+        padding: 0 .5rem;
+      }
     }
   }
 }
