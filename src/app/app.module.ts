@@ -8,12 +8,14 @@ import { OverlayModule } from '@angular/cdk/overlay';
 import { MessageService } from './services/message.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MessageLogComponent } from './message-log/message-log.component';
+import { HudComponent } from './hud/hud.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     VaultBoyComponent,
-    MessageLogComponent
+    MessageLogComponent,
+    HudComponent
   ],
   imports: [
     BrowserModule,
