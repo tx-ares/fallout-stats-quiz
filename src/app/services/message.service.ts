@@ -10,7 +10,9 @@ export class MessageService {
   constructor(private snackBar: MatSnackBar) { }
 
   public createMessage(messageSender: IMessageSender): void {
-    this.snackBar.open(messageSender.who, messageSender.message, {
+    const messageSenderWithColon = messageSender.who + ':';
+
+    this.snackBar.open(messageSenderWithColon, messageSender.message, {
       duration: messageSender.duration,
     });
   }
