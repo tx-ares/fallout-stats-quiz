@@ -14,7 +14,7 @@ export class VaultBoyComponent implements OnInit {
   constructor(private messageService: MessageService) { }
 
   public speak(): void {
-    this.messageService.createMessage({who: 'vault-boy', importance: 'casual', message: 'Hi there, I\'m Vault Boy!', duration: 100000} as IMessageSender);
+    this.messageService.createMessage({who: 'vault boy', importance: 'casual', message: 'Hi there, I\'m Vault Boy!', duration: 500000} as IMessageSender);
   }
 
   public ngOnInit(): void {
