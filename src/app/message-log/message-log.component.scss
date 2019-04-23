@@ -13,7 +13,7 @@
     color:$matrix-green;
     height: 0;
     visibility: hidden;
-    transition: 1s ease all;
+    transition: .25s ease all;
     overflow: hidden;
     margin-bottom: 2rem;
     &.open {
